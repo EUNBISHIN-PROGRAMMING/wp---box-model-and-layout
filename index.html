@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ko">
+    <title>박스모델과 레이아웃</title>
+    <style>
+        .container{
+            margin: 40px auto;
+            width: 800px; height: 1000px;
+            border: 2px solid black;
+        }
+        .menu{
+            display: inline;
+            height: 60px;
+            font-size: 25px;
+            line-height: 60px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-weight: normal;
+            color: navy;
+            font-weight: 600;
+        }
+        .img:not(.lorem){
+            padding-left: 80px;
+            padding-top: 10px;
+            height: 240px;
+            background-image: url(./images/moon.jpg);
+            background-size: 800px;
+            color: white;
+            font-size: 20px;
+        }
+        .lorem{
+            font-size: 20px;
+            padding-left: 90px;
+            padding-top: 40px;
+        }
+        .section1{
+            margin-left: 50px;
+            margin-top: 10px;
+            width: 400px;
+            margin-right: 70px;
+            float: left;
+        }
+        .aside{
+            margin-top: 10px;
+            width: 200px;
+            float: left;
+        }
+        .wrap{overflow: hidden;}
+        
+        .image{
+            margin-top: 15px;
+            margin-left: 50px;
+            margin-right: 50px;
+            width: 150px; height: 150px;
+            background-image: url(./images/moon3.jpg);
+            float: left;
+        }
+        .section2{
+            margin-top: 10px;
+            width: 700px;
+            margin-right: 70px;
+        }
+        .footer{
+            margin-top: 30px; 
+            height:117px;
+            background-color: gainsboro;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 117px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">메뉴1</div>
+        <div class="menu">메뉴2</div>
+        <div class="menu">메뉴3</div>
+        <div class="img">
+            <h1>My Home Page</h1>
+            <div class="lorem">Lorem ipsum dolor sit amet consectetur......</div>
+        </div>
+        <div class="section1">
+            <h1>Section 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Nam provident molestiae perspiciatis numquam doloribus nobis repellat impedit odit veritatis iste sequi a nisi cupiditate ab, vel corporis sit, 
+                minima odio ea quasi alias temporibus! Architecto provident possimus veniam ab minus, 
+                excepturi deserunt sunt saepe quasi similique suscipit dignissimos quidem culpa atque necessitatibus sint non numquam sequi. 
+                Ducimus at illo praesentium sint amet reprehenderit, ipsa itaque dolor placeat! Nulla, laboriosam aspernatur.</p>
+        </div>
+        <div class="aside">
+            <h1>Aside</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta id omnis maxime eligendi, ipsam laborum nemo, 
+                cumque ab quos consequatur esse porro ut nesciunt minima libero est ipsa quam. Corrupti voluptates et quo laboriosam ab consectetur enim, 
+                vel unde suscipit!</p>
+        </div>
+        <div class="image"></div>
+            <h1>Section 2</h1>
+            <div class="section2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi ratione, eius eum nam ea. 
+                    Et ab, iure dolore esse ipsum aperiam error facere magni cum sapiente ea consequuntur corporis natus non assumenda, nisi voluptatem.</p>
+            </div>
+        <div class="footer">Copyright 2020(EunBi)all rights reserved</div>    
+</body>
+</html>
